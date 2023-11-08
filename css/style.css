@@ -1,0 +1,858 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;700;900&display=swap');
+*{
+    padding:0;
+    margin: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+/*Убираем линии обводки некоторых браузеров*/
+:focus,
+:active {
+    outline: none;
+}
+a:focus,
+a:active {
+    outline: none;
+}
+/*задаем блочными теги Html5*/
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+
+html,
+body {
+    letter-spacing: 0.3px;
+    font-family: 'Inter';
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 30px;
+    font-size: 18px;
+    overflow-x: hidden;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+/*задаем наследование шрифтов*/
+input,
+button,
+textarea {
+    font-family: 'Inter';
+}
+input::-ms-clear {
+    display: none;
+}
+button {
+    cursor: pointer;
+}
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+a,
+a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+ul li {
+    list-style: none;
+}
+img {
+    vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: 700;
+    color: #202025;
+    letter-spacing: 0.3px;
+}
+button{
+    
+    display: block;
+    border: 1px solid rgb(29, 29, 29);
+    background-color: #FFF;
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: rgb(29, 29, 29);
+    font-family: 'inter', sans-serif;
+    font-weight: 700;
+    border-radius: 4px 4px 4px 4px;
+    cursor: pointer;
+    padding:3% 3%;
+    text-align: center;
+    white-space:nowrap;
+
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    
+}
+.logo h1{
+    font-size: 20px;
+    font-weight: 900;
+}
+.logo img{
+    padding-bottom: 10px;
+    padding-right: 8px;
+    height: 60%;
+}
+.naav{
+    padding: 10px 80px;
+    display: flex;
+    justify-content: space-between;
+}
+.verh{
+    
+    display: flex;
+    align-items: center;
+}
+
+#eq{
+    display: none;
+}
+.verh_2{
+    display: none;
+}
+
+.verh li{
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 10px 20px 0 20px;
+}
+
+i{
+    font-size: 1.5em;
+}
+.verh li button{
+    font-size: 1em;
+    padding: 5px 10px;
+}
+.sec-1-cont h1{
+    font-size: 2em;
+    color: #FFF;
+}
+.buts_sec1{
+    display: flex;
+    
+}
+.buts_sec1 button{
+    margin: 30px 20px 0 0;
+    font-size: 100%;
+    padding: 20px 80px;
+    
+}
+.sec-1{
+    display: flex;
+    justify-content:center;
+    position: relative;
+    
+}
+#sec-1-cont{
+    padding: 40px;
+    width: 100%;
+    position: absolute;
+    top: 70%;
+    left: 0%;
+    right: 0%;
+    
+    
+}
+.sec-1-cont h1{
+    font-size: 3em;
+}
+#dog{
+    color: rgb(255, 255, 255);
+    font-size: 100px;
+}
+.col-md-3{
+    padding: 15px;
+    margin: 5px 0;
+    
+}
+.col-md-3:hover{
+    
+    background-color: #686A6C;
+    
+    border-radius: 20px;
+    
+}
+.col-md-3:hover h1,
+.col-md-3:hover h2{
+    color: #FFF;
+}
+#ends_in{
+    position: relative;
+}
+.ends_in{
+    position: absolute;
+    bottom: 0;
+    background-color: #FFF;
+    border-radius: 20px ;
+    color: #202025;
+    padding: 30px 50px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.ends_in ul{
+    padding: 0;
+    display: flex;
+    margin: 0;
+}
+.ends_in ul li{
+    padding: 0  55px 0 0;
+}
+.ends_in ul li:last-child{
+    padding: 0 ;
+}
+.ends_in h1,
+.ends_in ul li h2{
+    color: #686A6C;
+    font-size: 15px;
+}
+.ends_in ul li h1{
+    color: #202025;
+    font-size: 50px;
+}
+
+.img1{
+    width: 100%;
+    z-index: -1;
+}
+#pr_b{
+    display: flex;
+    align-items: center;
+    background-color: rgba(1,2,1,0);
+    border-color: #FFF;
+    color: #FFF;
+} 
+#pr_b i{
+    color: #FFF;
+    padding: 0 0 0px 10px;
+}
+
+.container_tabs{
+    
+    padding: 20px 80px  80px;
+}
+.tab_nav{
+    padding: 0 0 20px 0;
+}
+.col-sm-6 col-md-3{
+    
+    justify-content: center;
+}
+.img{
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    padding: 0 0 0 15px;
+    object-fit: scale-down;
+}
+.pod_pic{
+    padding: 10px;
+    
+}
+.nick{
+    display: flex;
+    
+}
+.nick h1{
+    padding: 10px 0;
+}
+.avatar{
+    width: 15%;
+    height: 15%;
+    padding-right: 5px;
+}
+.circle{
+    width: 9px;
+	height: 9px;
+	background:#FD5D47;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+    margin: 9px;
+    margin-left: 0;
+}
+.bid1{
+    display: flex;
+}
+.buynft{
+    display: flex;
+    justify-content: space-between;
+}
+.bid h1,
+.buynow h2{
+    font-size: 23px;
+}
+.bid1 h1,
+.buynow h1{
+    font-size: 15px;
+    padding-top: 4px;
+}
+.buynow h1{
+    text-align: end;
+}
+.bid1 h1,
+.bid h1,
+.buynow h1,
+.buynow h2{
+    white-space:nowrap;
+}
+#nav-tab{
+    border: #FFF;
+}
+#nav-30days-tab,
+#nav-7days-tab,
+#nav-1day-tab{
+    border: #FFF;
+}
+
+.nav-link{
+    background-color: #FFF;
+    border: #FFF;
+    color: #202025;
+} 
+.nav-link:hover{
+    background-color: #FFF;
+    border: #FFF;
+    color: #202025;
+} 
+.nav-link:checked{
+    background-color: #FFF;
+    border: #FFF;
+    color: #202025;
+} 
+.tab_nav{
+    display: flex;
+    justify-content: space-between;
+}
+.tab_nav h1{
+    display: flex;
+    align-items: center;
+}
+#ending_soon{
+    background-color: #DBFF73;
+    font-size: 2em;
+    padding: 40px;
+}
+#ending_soon h1{
+    
+}
+.carousel_img{
+    width: 100%;
+    
+    object-fit: cover;
+}
+#Download{
+    background-color: #B9A9FB;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 60px;
+}
+.Download_h1{
+    font-size: 2em;
+}
+.Download_niz h1{
+    font-size: 0.7em;
+    font-weight: 400;
+    padding: 30px 0 10px 0;
+}
+.Download_but{
+    margin-right: 20px;
+}
+#dbuts{
+    display: flex;
+}
+
+.Download_but i{
+    
+    font-weight: 100;
+}
+
+#collection{
+    padding: 60px;
+    border-bottom: solid;
+}
+#collection h1{
+    font-size: 2em;
+    padding: 0 0 10px 0 ;
+}
+#collection h2{
+    
+    padding: 0 0 200px 0 ;
+}
+.collection_but{
+    width: 100%;
+}
+.input-group-text i{
+    font-size: 1.2em;
+    
+}
+.input-group-text {
+    padding: 10px;
+}
+.icon-help{
+    color: #686A6C;
+}
+#podval{
+    padding: 60px;
+}
+#podval h1{
+    letter-spacing: 1px;
+    font-weight: 900;
+    padding-bottom: 10px;
+}
+#podval ul{
+    padding: 0;
+    
+}
+
+#podval ul li{
+    color: #686A6C;
+    padding: 10px 0;
+    
+    display: flex;
+    align-items:center; 
+    
+}
+#podval ul li i{
+    
+
+    padding: 0px 5px;}
+#podval h2{
+    font-weight: 900;
+    padding: 10px 0;
+    color: #686A6C;
+}
+
+#id h1{
+    margin-top: 8px;
+    font-size: 25px;
+}
+.modal_but{
+    font-size: 1em;
+    padding: 10px 30px;
+    margin: 20px auto;
+    font-family:"Inter" ;
+}
+
+
+@media(max-width:1700px){
+    #sec-1-cont{
+        padding: 60px;
+        top: 60%;
+ 
+    }
+    .Download_niz h1{
+        font-size: 0.8em;
+        padding-bottom: 20px;
+    }
+}
+@media(max-width:1600px){
+    #sec-1-cont{
+        padding-right: 120px;
+    }
+}
+
+@media(max-width:1400px){
+    #sec-1-cont{
+        top: 50%;
+        padding-right: 200px;
+    }
+    
+    .img{
+        width: 80%;
+        display: flex;
+        margin: 0 auto;
+        justify-content: center;
+        object-fit: contain;
+    }
+    .nick h1{
+        margin: auto 0;
+        font-size: 1.2em;
+    }
+    .avatar{
+        width: 13%;
+        height: 15%;
+        padding-right: 5px;
+        margin: auto 0;
+    }
+    .nick{
+        padding: 5px;
+        
+    }
+    .pod_pic{
+        padding: 10px 80px;
+        margin-bottom: 30px;
+    }
+    .bid h1,
+    .buynow h1{
+        font-size: 20px;
+    }
+    
+    
+    
+}
+@media(max-width:1212px){
+   #ends_in{
+    display: none;
+   }
+   .naav{
+    padding: 10px 30px;
+   }
+}
+@media(max-width:1134px){
+    
+    .bid h1,
+    .buynow h2{
+        font-size: 20px;
+    }
+    .bid1 h1,
+    .buynow h1{
+        font-size: 17px;
+    }
+
+}
+@media(max-width:1040px){
+    
+    .bid h1,
+    .buynow h2{
+        font-size: 17px;
+    }
+    .bid1 h1,
+    .buynow h1{
+        font-size: 17px;
+    }
+
+}
+@media(max-width:999px){
+    #ending_soon{
+        border-top: solid;
+        background-color: #ffffff;
+        
+    }
+    #ending_soon h1{
+        text-align: center;
+    }
+    #Download{
+        background-color: #ffffff;
+        
+    }
+    #collection h2{
+        padding-bottom: 40px;
+    }
+    .Download_h1,
+    .Download_niz h1,
+    #collection h1,
+    #collection h2{
+        text-align: center;
+    }
+    .Download_but{
+        width: 50%;
+    }
+    #sec-1-cont{
+        padding: 60px;
+        top: 40%;
+ 
+    }
+    
+  
+}
+@media(max-width:1200px){
+    #podval_logo{
+        display: none;
+    }
+}
+@media(max-width:991px){
+    
+    
+    .avatar{
+        width: 18%;
+        margin-right: 10px;
+    }
+    .pod_pic{
+        padding: 10px 50px;
+        
+    }
+}
+@media(max-width:864px){
+    .bid h1,
+    .buynow h1,
+    .buynow h2{
+        font-size: 15px;
+    }
+}
+@media(max-width:836px){
+    .img{
+        width: 100%;
+    }
+    .pod_pic{
+        padding: 10px 30px;
+        
+    }
+    #sec-1-cont{
+        top: 28%;
+        padding-right: 200px;
+    }
+}
+@media(max-width:768px){
+    .container_tabs,
+    .tab-pane{
+        padding: 0;
+    }
+    .tab_nav{
+        padding: 20px 20px;
+    }
+}
+@media(max-width:750px){
+    #dog{
+        font-size: 70px;
+    }
+    .buts_sec1 button{
+        margin: 10px 20px 0 0;
+        padding: 10px 40px;
+        
+    }
+    #sec-1-cont{
+        top: 40%;}
+
+}
+@media(max-width:700px){
+    .verh{
+        display: none;
+    }
+ 
+    #eq{
+        font-size: 1.4em;
+        padding: 10px 0;
+        display: block;
+    }
+}
+@media(max-width:690px){
+    #sec-1-cont{
+        top: 30%;
+        padding: 40px;}
+}
+@media(max-width:575px){
+    .img{
+        width: 70%;
+    }
+    .pod_pic{
+        padding: 10px 90px;
+        
+    }
+    .buynow h2,
+    .bid h1{
+        font-size: 1.3em;
+    }
+    .bid1 h1,
+    .buynow h1{
+        font-size: 1em;
+
+    }
+    .avatar{
+        width: 14%;
+    }
+}
+@media(max-width:575px){
+
+    .buynow h2,
+    .bid h1{
+        font-size: 1em;
+    }
+    .bid1 h1,
+    .buynow h1{
+        font-size: 0.8em;
+
+    }
+    .nick h1{
+        font-size: 0.9em;
+    }
+    .podval_item {
+        text-align: center;
+        margin-top: 20px;
+    }
+    #podval ul li{
+        display: block;
+        text-align: center;
+        
+    }
+}
+@media(max-width:536px){
+    #dog{
+        font-size: 50px;
+    }
+    .buts_sec1 button{
+        margin: 10px 20px 0 0;
+        padding: 10px 40px;}
+    #buts_sec1{
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+
+}
+@media(max-width:530px){
+    .img1{
+        display: none;
+    }
+
+    #sec-1-cont{
+        position: unset;
+        width: 100%;
+        padding: 30px;
+        
+        
+    }
+    .buts_sec1{
+        flex-direction: column;
+    }
+    #pr_b{
+        border-color: #202025;
+        color: #202025;
+        margin-right: 20px;
+    }
+    #pr_b i{
+        
+        color: #202025;
+    }
+    .buts_sec1 button{
+        color: #202025;
+        margin: 10px 0;
+        padding: 20;
+        width: 200px;
+        
+    }
+    #c9{
+        padding: 0;
+        width: 100%;
+    }
+    #dog{
+        color: #202025;
+        text-align: center;
+        white-space:nowrap;
+    }
+    .img{
+        width: 95%;
+    }
+    .pod_pic{
+        padding: 10px 38px;
+    }
+    .buynow h2,
+    .bid h1{
+        font-size: 1.4em;
+    }
+    .bid1 h1,
+    .buynow h1{
+        font-size: 1em;
+
+    }
+}
+@media(max-width:446px){
+    .tab_nav h1{
+        display: none;
+    }
+    #nav-tab{
+        margin: 0 auto;
+    }
+    .buynow h2,
+    .bid h1{
+        font-size: 1.2em;
+    }
+    .bid1 h1,
+    .buynow h1{
+        font-size: 0.9em;
+
+    }
+    .nick h1{
+        font-size: 1.2em;
+    }
+    .input-group-text{
+        display: none;
+    }
+    #dbuts{
+        flex-direction: column;
+        
+    }
+    .Download_but{
+        width: 70%;
+        margin: 10px auto;
+    }
+    #eq{
+        padding-top: 2px;
+    }
+}
+@media(max-width:392px){
+    .img{
+        padding: 0;
+        width: 100%;
+    }
+    .pod_pic{
+        padding: 10px 15px;
+    }
+    .buynow h2,
+    .bid h1{
+        font-size: 1.2em;
+    }
+    .bid1 h1,
+    .buynow h1{
+        font-size: 0.8em;
+
+    }
+    #Download{
+        padding: 40px;
+    }
+}
+@media(max-width:355px){
+    .Download_but{
+        padding: 13px;
+        width: 90%;}
+    
+    #collection{
+        padding: 30px ;
+        
+    }
+    .collection_but{
+        margin-bottom: 60px;
+    }
+}
+@media(max-width:340px){
+    .buynow h2,
+    .bid h1{
+        font-size: 1em;
+    }
+    .bid1 h1,
+    .buynow h1{
+        font-size: 0.8em;
+
+    }
+    .nav-link{
+        padding: 0 10px;
+    }
+    .nav-link{
+        font-weight: 700;
+        font-size: 15px;
+    }
+}
+
